@@ -43,8 +43,8 @@ function setup() {
 	ground = Bodies.rectangle(200,390,400,20,ground_options);
 	World.add(world,ground);
 
-	quadrado = bodies.quadrado(120,10,10,quadrado_options)
-	world.add(world,quadrado)
+	quadrado = Bodies.rectangle(120,10,10,quadrado_options)
+	World.add(world,quadrado)
   
 	circulo = Bodies.circle(100,10,20,circulo_options)
 	World.add(world,circulo);
@@ -59,14 +59,16 @@ function setup() {
 
 function draw() {
   background(0);
-  
+  Engine.update(engine)
+	
   ellipse(circulo.position.x,circulo.position.y,20);
   fill("yellow")
-  ellipse(retangulo.position.x,retangulo.position.y,40,40)
+  rect(retangulo.position.x,retangulo.position.y,40,40)
   fill("red")
-  ellipse(quadrado.position.x,quadrado.position.y,60,60)
+  rect(quadrado.position.x,quadrado.position.y,60,60)
   fill("blue")
   rect(ground.position.x,ground.position.y,400,20);
+	
   drawSprites();
  
 }
