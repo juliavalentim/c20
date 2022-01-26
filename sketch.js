@@ -59,8 +59,8 @@ function setup() {
 
 function draw() {
   background(0);
-  Engine.update(engine)
-	
+  Engine.update(engine);
+  
   ellipse(circulo.position.x,circulo.position.y,20);
   fill("yellow")
   rect(retangulo.position.x,retangulo.position.y,40,40)
@@ -68,9 +68,7 @@ function draw() {
   rect(quadrado.position.x,quadrado.position.y,60,60)
   fill("blue")
   rect(ground.position.x,ground.position.y,400,20);
-	
-  drawSprites();
- 
+  
 }
 
 
