@@ -43,13 +43,13 @@ function setup() {
 	ground = Bodies.rectangle(200,390,400,20,ground_options);
 	World.add(world,ground);
 
-	quadrado = Bodies.rectangle(120,10,10,quadrado_options)
+	quadrado = Bodies.rectangle(120,10,10,120,  quadrado_options)
 	World.add(world,quadrado)
   
 	circulo = Bodies.circle(100,10,20,circulo_options)
 	World.add(world,circulo);
   
-	retangulo = Bodies.rectangle(80,10,40,retangulo_options)
+	retangulo = Bodies.rectangle(80,10,50,40, retangulo_options)
 	World.add(world,retangulo)
 
 	rectMode(CENTER);
@@ -61,13 +61,14 @@ function draw() {
   background(0);
   Engine.update(engine);
   
-  ellipse(circulo.position.x,circulo.position.y,20);
   fill("yellow")
-  rect(retangulo.position.x,retangulo.position.y,40,40)
+  ellipse(circulo.position.x,circulo.position.y,20);
   fill("red")
-  rect(quadrado.position.x,quadrado.position.y,60,60)
+  rect(retangulo.position.x,retangulo.position.y,80,40)
   fill("blue")
-  rect(ground.position.x,ground.position.y,400,20);
+  rect(quadrado.position.x,quadrado.position.y,60,60)
+  fill("green")
+  rect(ground.position.x,ground.position.y,800,20);
   
 }
 
