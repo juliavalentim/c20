@@ -64,11 +64,11 @@ function draw() {
   fill("yellow")
   ellipse(circulo.position.x,circulo.position.y,20);
   fill("red")
-  rect(retangulo.position.x,retangulo.position.y,80,40)
+  rect(retangulo.position.x,retangulo.position.y,80,80)
   fill("blue")
-  rect(quadrado.position.x,quadrado.position.y,60,60)
+  rect(quadrado.position.x,quadrado.position.y,50,50)
   fill("green")
-  rect(ground.position.x,ground.position.y,800,20);
+  rect(ground.position.x,ground.position.y,600,20);
   
 }
 
